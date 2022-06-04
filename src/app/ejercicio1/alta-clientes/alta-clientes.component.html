@@ -1,0 +1,51 @@
+
+<h2>Alta clientes</h2>
+
+<div class="container">
+  <form class="mt-3" [formGroup]="myForm">
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">Nombre:</label>
+      <div class="col-10">
+        <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">CIF:</label>
+      <div class="col-10">
+        <input type="text" class="form-control" placeholder="CIF" formControlName="CIF">
+      </div>
+    </div>
+
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">Dirección:</label>
+      <div class="col-10">
+        <input type="text" class="form-control" placeholder="Dirección" formControlName="direccion">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">Grupo:</label>
+      <div class="col-10">
+        <select class="form-select" placeholder="Elige el grupo" formControlName="grupo">
+          <option value="">Sin definir:</option>
+          <option *ngFor="let opcion of opciones" [value]="opcion">{{opcion}}</option>
+        </select>
+      </div>
+    </div>
+
+
+    <button type="button" class="btn btn-primary" [disabled]="this.myForm.invalid"
+      (click)="guardarClicked()">Guardar</button>
+
+  </form>
+
+</div>
+
+<h2>Listado clientes</h2>
+
+<div class="marginTop">
+  <app-listado-clientes  [valoresFormulario]="valoresApasar"></app-listado-clientes>
+</div>

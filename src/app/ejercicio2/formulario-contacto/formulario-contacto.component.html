@@ -1,0 +1,49 @@
+
+<h2>Formulario de contacto</h2>
+
+<div class="container">
+  <form class="mt-3" [formGroup]="myForm">
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">Nombre:</label>
+      <div class="col-10">
+        <input type="text" class="form-control" placeholder="Nombre y apellidos" formControlName="nombre">
+        <mat-error *ngIf="myForm.controls['nombre'].errors">{{mensajesError.nombre}}</mat-error>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">Email:</label>
+      <div class="col-10">
+        <input type="text" class="form-control" placeholder="ejemplo@dominio.com" formControlName="email">
+        <mat-error *ngIf="myForm.controls['email'].errors">{{mensajesError.email}}</mat-error>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">Mensaje:</label>
+      <div class="col-10">
+        <textarea type="text" class="md-textarea form-control"  placeholder="Mensaje a enviar" formControlName="mensaje"></textarea>
+        <mat-error *ngIf="myForm.controls['mensaje'].errors">{{mensajesError.mensaje}}</mat-error>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-2 col-form-label">2+3=?</label>
+      <div class="col-10">
+        <input type="text" class="form-control" placeholder="Respuesta" formControlName="respuesta">
+        <mat-error *ngIf="myForm.controls['respuesta'].errors">{{mensajesError.validacion}}</mat-error>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" [disabled]="this.myForm.invalid"
+      (click)="guardarClicked()">Enviar</button>
+
+  </form>
+</div>
+
+<h2>Listado formularios enviados</h2>
+
+<div class="marginTop">
+  <app-formularios-enviados [valoresFormulario]="valoresApasar"></app-formularios-enviados>
+</div>

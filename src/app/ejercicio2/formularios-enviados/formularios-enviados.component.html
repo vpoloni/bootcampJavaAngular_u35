@@ -1,0 +1,22 @@
+
+<div *ngFor="let registro of valoresFormulario; index as i; ">
+  <div class="container">
+    <div class="row d-flex justify-content-around">
+      <div class="col">
+        Formulario {{i + 1}}
+      </div>
+      <div class="col">
+        {{registro?.nombre}}
+      </div>
+      <div class="col">
+        {{registro?.email}}
+      </div>
+      <div class="col">
+        {{registro?.mensaje}}
+      </div>
+      <div class="col">
+        {{registro?.respuesta}}
+      </div>
+    </div>
+  </div>
+</div>

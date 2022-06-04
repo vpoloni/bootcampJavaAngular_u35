@@ -1,0 +1,21 @@
+<div *ngFor="let cliente of valoresFormulario; index as i; ">
+  <div class="container">
+    <div class="row d-flex justify-content-around">
+      <div class="col">
+        Cliente {{i + 1}}
+      </div>
+      <div class="col">
+        {{cliente?.nombre}}
+      </div>
+      <div class="col">
+        {{cliente?.CIF}}
+      </div>
+      <div class="col">
+        {{cliente?.direccion}}
+      </div>
+      <div class="col">
+        {{cliente?.grupo}}
+      </div>
+    </div>
+  </div>
+</div>
