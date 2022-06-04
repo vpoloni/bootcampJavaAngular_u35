@@ -1,5 +1,22 @@
 # ComponentesApp
 
+![image](https://user-images.githubusercontent.com/89861246/172027812-5ea414d0-caaa-491d-b328-1c8635d444db.png)
+
+![image](https://user-images.githubusercontent.com/89861246/172027830-6df02add-72e4-4c51-88cb-6bcea7267a01.png)
+
+![image](https://user-images.githubusercontent.com/89861246/172027851-f28e2db4-1c6b-4eff-9cf4-4e9a3d2c8b80.png)
+
+![image](https://user-images.githubusercontent.com/89861246/172027870-76968bde-6e6a-4e5c-8a40-a0191fae495d.png)
+
+![image](https://user-images.githubusercontent.com/89861246/172027885-4b3f2798-ab62-4557-98f2-2e4bdc367083.png)
+
+![image](https://user-images.githubusercontent.com/89861246/172027933-8474d6b4-50af-4c89-b79f-a25433c26bec.png)
+
+![image](https://user-images.githubusercontent.com/89861246/172027960-d50857b6-d8b7-4cad-aa2e-5fe33e211fab.png)
+
+![image](https://user-images.githubusercontent.com/89861246/172027968-331280f7-fe3e-4a8d-a040-6371706f85c0.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
